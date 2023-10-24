@@ -1,0 +1,39 @@
+﻿@page "/Home"
+@using Syncfusion.Blazor.Layouts
+<h3 style="margin-bottom:30px">Home</h3>
+
+<SfDashboardLayout Columns="2" >
+
+    <DashboardLayoutPanels>
+        <DashboardLayoutPanel Column="0">
+            <HeaderTemplate>Until Graduation</HeaderTemplate>
+            <ContentTemplate>
+                <div style="height:100%;width:100%">
+                <SfProgressBar ID="prograsss" Type="ProgressType.Circular" Value="40" Minimum="0" Maximum="100" TrackThickness="8" ProgressThickness="8">
+                </SfProgressBar>
+                </div>
+
+            </ContentTemplate>
+        </DashboardLayoutPanel>
+        <DashboardLayoutPanel Column="1">
+            <HeaderTemplate >Calender</HeaderTemplate>
+            <ContentTemplate>
+                <div  style="height:100%;width:100%">
+                    <SfCalendar TValue="DateTime" ID="Calender"></SfCalendar>
+
+                </div>
+            </ContentTemplate>
+        </DashboardLayoutPanel>
+    </DashboardLayoutPanels>
+</SfDashboardLayout>
+
+@code {
+
+}
+
+<style>
+    #Calender, #prograsss , #chart1, #chart, #range {
+        height: 100% !important;
+        width: 100% !important;
+    }
+</style>

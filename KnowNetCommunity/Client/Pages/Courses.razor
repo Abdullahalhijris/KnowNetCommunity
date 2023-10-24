@@ -1,0 +1,23 @@
+﻿@page "/Courses"
+@using Syncfusion.Blazor.Layouts
+@using Syncfusion.Blazor.DropDowns
+
+<h3 style="margin-bottom:30px">Courses</h3>
+<SfDashboardLayout>
+    <DashboardLayoutPanels>
+        <DashboardLayoutPanel>
+            <HeaderTemplate><div> </div></HeaderTemplate>
+            <ContentTemplate><div>
+
+                    <SfComboBox TValue="string" TItem="string" Placeholder="Select a Major">
+
+                    </SfComboBox>
+
+            </div></ContentTemplate>
+        </DashboardLayoutPanel>
+    </DashboardLayoutPanels>
+</SfDashboardLayout>
+
+@code {
+
+}
